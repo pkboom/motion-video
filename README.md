@@ -7,7 +7,7 @@ How-to video studio. Records real app footage and composes how-to MP4s with zoom
 Paste this into [Claude Code](https://claude.com/claude-code):
 
 ```
-Clone https://github.com/pkboom/motion-video.git into ~/code and set it up
+Clone https://github.com/pkboom/motion-video.git into ~/code and install it.
 ```
 
 Run this in the terminal.
