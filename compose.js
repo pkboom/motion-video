@@ -90,7 +90,7 @@ for (const e of events) {
     const c = segs.find((s) => s.kind === 'card' && s.chapter === e.no);
     if (c) raw.push({ f: c.f0, d: 0.001, z: 1, cx: home.cx, cy: home.cy });
   } else if ((e.type === 'click' || e.type === 'type') && !explicit) {
-    let z = e.zoom ?? tl.zoom;
+    let z = e.zoom ?? (vertical ? 1 : tl.zoom); // vertical is already 1.78x at zoom 1
     if (e.box.width > 1000) z = Math.min(z, 1.25);
     const f = srcToFinal(e.moveT0);
     raw.push({ f, d: 0.85, z, ...clampC(z, e.x, e.y) });
