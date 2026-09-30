@@ -2,7 +2,7 @@
 
 How-to video studio. Records real app footage and composes how-to MP4s with zooms, click highlights and captions.
 
-## Setup query
+## Installation
 
 Paste this into [Claude Code](https://claude.com/claude-code):
 
@@ -10,7 +10,7 @@ Paste this into [Claude Code](https://claude.com/claude-code):
 Clone https://github.com/pkboom/motion-video.git into ~/code and set it up
 ```
 
-## Set up
+Run this in the terminal.
 
 ```
 brew install node ffmpeg git
