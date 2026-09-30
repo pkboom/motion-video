@@ -1,0 +1,27 @@
+{
+  "name": "motion-video",
+  "version": "1.0.0",
+  "description": "How-to video studio. Records real app footage (Playwright-driven screen recordings) and composes how-to MP4s with zooms, click highlights and captions.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "record": "node record.js",
+    "compose": "node compose.js",
+    "login": "node login.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pkboom/motion-video.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/pkboom/motion-video/issues"
+  },
+  "homepage": "https://github.com/pkboom/motion-video#readme",
+  "dependencies": {
+    "playwright": "^1.63.0"
+  }
+}

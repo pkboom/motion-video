@@ -1,3 +1,7 @@
 .omc/
 node_modules/
 .DS_Store
+auth/*
+!auth/.gitkeep
+raw/
+out/
