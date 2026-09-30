@@ -4,19 +4,8 @@ How-to video studio. Records real app footage and composes how-to MP4s with zoom
 
 ## Installation
 
-Paste this into [Claude Code](https://claude.com/claude-code):
+Open Terminal (Cmd+Space, type "Terminal"), paste this, and press Enter:
 
 ```
-Clone https://github.com/pkboom/motion-video.git into ~/code and install it.
-```
-
-Run this in the terminal.
-
-```
-brew install node ffmpeg git
-mkdir -p ~/code && cd ~/code
-git clone https://github.com/pkboom/motion-video.git
-cd motion-video
-npm install
-npx playwright install chromium
+curl -fsSL https://raw.githubusercontent.com/pkboom/motion-video/main/install.sh | bash
 ```
