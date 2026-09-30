@@ -117,6 +117,11 @@ async function run(step) {
       else await page.locator(step.waitFor).first().waitFor({ state: 'visible', timeout: step.timeout ?? 60000 });
     } else await sleep(step.wait);
     ev.t1 = now(); events.push(ev);
+  } else if ('waitForURL' in step) {
+    const ev = { type: 'wait', t0: now(), fast: true };
+    await page.waitForURL(new RegExp(step.waitForURL), { timeout: step.timeout ?? 60000 });
+    await sleep(step.settle ?? 1500);
+    ev.t1 = now(); events.push(ev);
   } else if ('caption' in step) {
     const ev = { type: 'caption', t0: now(), text: step.caption };
     events.push(ev);
