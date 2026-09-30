@@ -16,8 +16,8 @@ fi
 echo "==> Installing node, ffmpeg, git"
 brew install node ffmpeg git
 
-mkdir -p ~/code
-cd ~/code
+mkdir -p ~/Downloads
+cd ~/Downloads
 if [ ! -d motion-video ]; then
   git clone https://github.com/pkboom/motion-video.git
 fi
@@ -28,4 +28,4 @@ npm install
 npx playwright install chromium
 
 echo ""
-echo "Done! motion-video is installed in ~/code/motion-video"
+echo "Done! motion-video is installed in ~/Downloads/motion-video"
